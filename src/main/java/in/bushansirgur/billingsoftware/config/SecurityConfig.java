@@ -69,7 +69,7 @@ public class SecurityConfig {
                 "http://localhost:5173"
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        config.setAllowedHeaders(List.of("Authorization", "Content-Type"));
+        config.setAllowedHeaders(List.of("*")); // Allow all headers
         config.setAllowCredentials(true);
         config.setMaxAge(3600L);
 
